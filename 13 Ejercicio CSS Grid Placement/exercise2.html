@@ -15,8 +15,8 @@
       height: 100vh;
       display: grid;
       gap: 3rem;
-      grid-template-columns: 1fr 1fr 1.5fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr; /* Dos columnas de igual tamaño */
+      grid-template-rows: 1fr 1fr; /* Dos filas de igual tamaño */
     }
 
     .item {
@@ -27,29 +27,34 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
     }
 
     .cowboy {
       background-color: #00B9FF;
-      grid-column: span 2;
+      grid-column: 1; /* Primer columna */
+      grid-row: 1; /* Primera fila */
     }
 
     .astronaut {
       background-color: #03989E;
-      order: 1;
-
-      /* TODO: Make the astronaut box look like the goal2 image. */
-
+      grid-column: 2; /* Segunda columna */
+      grid-row: 1; /* Primera fila */
     }
+
+    .book {
+      background-color: #8A2BE2;
+      grid-column: 1; /* Primera columna */
+      grid-row: 2; /* Segunda fila */
+    }
+
   </style>
 </head>
 
 <body>
   <div class="container">
     <div class="item cowboy">🤠</div>
-    <div class="item astronaut">👨‍🚀</div>
-    <div class="item book">📖</div>
+    <div class="item astronaut">📖</div>
+    <div class="item book">👨‍🚀</div>
   </div>
 </body>
 
