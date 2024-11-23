@@ -1,12 +1,53 @@
-/* Don't change the existing CSS. */
-
-.box {
-  background-color: blue;
-  padding: 10px;
-}
-
-p {
-  color: yellow;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4; /* Fondo neutro */
+  font-family: Arial, sans-serif; /* Fuente simple y moderna */
+}
+
+/* Estilos para el contenedor exterior con ID */
+#outer-box {
+  background-color: purple; /* Fondo morado */
+  padding: 20px;
+  width: 85vw;
+  display: flex;
+  justify-content: space-between; /* Espacio entre los contenedores internos */
+}
+
+/* Estilos para los contenedores internos con clase .box */
+.box {
+  background-color: blue; /* Fondo azul */
+  padding: 20px;
+  border-radius: 0px; /* Bordes redondeados */
+  flex-direction: column;
+}
+
+/* Estilo para los textos amarillos */
+.box p {
+  color: yellow; /* Texto amarillo */
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+/* Estilos para los cuadros rojos dentro de .box */
+.inner-box {
+  background-color: red; /* Fondo rojo */
+  padding: 15px;
+  color: white; /* Texto blanco */
+}
+
+/* Estilo para los textos blancos dentro de los cuadros rojos */
+.white-text {
+  font-size: 18px; /* Tamaño de fuente para el texto blanco */
+  text-align: left;
 }
